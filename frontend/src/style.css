@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos del cuerpo */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.container table img {
+  width: 100px;
+  height: 100px;
+}
+
+.container table {
+  width: 800px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #fcfcfc;
+}
+
+tr {
+  transition: background-color 0.3s ease;
+}
+
+tr:hover {
+  background-color: #ececec;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  color: #444444;
+}
+
+/* Barra de navegación */
+.head-nav {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+}
+
+.navbar .menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .3s ease-in-out;
+}
+
+.navbar .nav-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  padding: 0 10px;
+  font-size: 16px;
+  height: 100%;
+}
+
+.navbar .nav-links a:hover {
+  background: #464646;
+}
+
+@media (max-width: 840px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .container_table {
+    width: 100%;
+    display: block;
+    overflow: auto;
+  }
+
+  table {
+    margin: 0 20px;
+    width: 800px;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .nav-links a {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    height: auto;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar .nav-links li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .navbar .nav-links a {
+    font-size: 18px;
+  }
+}
