@@ -42,7 +42,7 @@ Cuenta con vista responsive de los datos, principalmente la barra de navegación
 <img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851311/staffboom/4.png"/>
 
 **Screenshots mobile**
-<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851325/staffboom/5.png"/>
-<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851335/staffboom/6.png"/>
-<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851415/staffboom/7.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851325/staffboom/5.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851335/staffboom/6.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851415/staffboom/7.png"/>
 
