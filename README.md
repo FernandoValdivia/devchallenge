@@ -36,13 +36,13 @@ El uso de caché evita realizar solicitudes innecesarias a la API externa si los
 Cuenta con vista responsive de los datos, principalmente la barra de navegación o navbar, cambia para dispositivos móviles o pantallas inferiores a 850px, de ser una lista de items a ser un menú desplegable o toggle. Luego tenemos la tabla de Competencias, Equipos y Detalle del jugador, que se ajustan para el desplazamiento de la pantalla.
 
 **Screenshots desktop**
-<img width=800 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851262/staffboom/1.png"/>
-<img width=800 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851275/staffboom/2.png"/>
-<img width=800 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851285/staffboom/3.png"/>
-<img width=800 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851311/staffboom/4.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851262/staffboom/1.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851275/staffboom/2.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851285/staffboom/3.png"/>
+<img width=800 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851311/staffboom/4.png"/>
 
 **Screenshots mobile**
-<img width=500 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851325/staffboom/5.png"/>
-<img width=500 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851335/staffboom/6.png"/>
-<img width=500 url="https://res.cloudinary.com/lvaldivia/image/upload/v1737851415/staffboom/7.png"/>
+<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851325/staffboom/5.png"/>
+<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851335/staffboom/6.png"/>
+<img width=500 src="https://res.cloudinary.com/lvaldivia/image/upload/v1737851415/staffboom/7.png"/>
 
