@@ -1,16 +1,15 @@
 <?php
-
 use App\Models\User;
 use Illuminate\Http\Request;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\FootballController;
-
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Api\FootballController;
 use App\Http\Controllers\PassportAuthController;
-
 // Web routes
-
+Route::get('/', function () {
+    return view('welcome');
+});
 // API routes
 Route::prefix('api')->group(function () {
     Route::get('/competitions', [FootballController::class, 'getAllCompetitions']);
@@ -20,12 +19,7 @@ Route::prefix('api')->group(function () {
     Route::get('/players', [FootballController::class, 'getAllPlayers']);
     Route::get('/players/{id}', [FootballController::class, 'getPlayer']);
 });
-
-
 // Authentication
 Route::post('register', [PassportAuthController::class, 'register']);
-Route::post('login', [PassportAuthController::class, 'login'])->name('login');
+Route::post('login', [PassportAuthController::class, 'login']);
 Route::post('logout', [PassportAuthController::class, 'logout']);
-Route::get('/', function () {
-    return view('welcome');
-});

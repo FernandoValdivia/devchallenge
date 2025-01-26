@@ -24,6 +24,10 @@ body {
   border-collapse: collapse;
 }
 
+table {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+}
+
 th,
 td {
   padding: 10px;
@@ -49,6 +53,28 @@ h1 {
 
 p {
   color: #444444;
+}
+
+.container_emblem {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+}
+
+.container_info_competencia {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+}
+
+.emblem_competencia {
+  width: fit-content;
+  height: 250px;
 }
 
 /* Barra de navegación */
@@ -99,7 +125,7 @@ p {
   font-size: 16px;
   height: 100%;
 }
-
+.nav-links .router-link-active,
 .navbar .nav-links a:hover {
   background: #464646;
 }

@@ -2,31 +2,30 @@
     <div class="container">
         <h1>Detalle de Competencia</h1>
         <div v-if="competition">
-        <div>
+        <div class="container_emblem">
             <img
-            :src="competition.emblem"
-            alt="Emblem"
-            v-if="competition.emblem"
+                :src="competition.emblem"
+                alt="Emblem"
+                v-if="competition.emblem"
+                class="emblem_competencia"
             />
             <p v-else>Sin Emblema</p>
         </div>
-        <p><strong>Nombre:</strong> {{ competition.name }}</p>
-        <p><strong>Código:</strong> {{ competition.code }}</p>
-        <p><strong>Tipo:</strong> {{ competition.type }}</p>
-        <p><strong>Temporada Actual:</strong></p>
-        <ul>
-            <li><strong>Inicio:</strong> {{ competition.currentSeason?.startDate }}</li>
-            <li><strong>Fin:</strong> {{ competition.currentSeason?.endDate }}</li>
-        </ul>
-        <p v-if="competition.numberOfAvailableSeasons">
-            <strong>Número de Temporadas:</strong> {{ competition.numberOfAvailableSeasons }}
-        </p>
-        <p v-else>
-            <strong>Número de Temporadas:</strong> No disponible
-        </p>
-        <p>
-            <strong>Última Actualización:</strong> {{ competition.lastUpdated }}
-        </p>
+        <div class="container_info_competencia">
+            <h2>Información</h2>
+            <p><strong>Código:</strong> {{ competition.id }}</p>
+            <p><strong>Nombre:</strong> {{ competition.name }}</p>
+            <p><strong>Código:</strong> {{ competition.code }}</p>
+            <p><strong>Tipo:</strong> {{ competition.type }}</p>
+            <p><strong>Temporada Actual:</strong></p>
+            <ul>
+                <li><strong>Inicio:</strong> {{ competition.currentSeason?.startDate }}</li>
+                <li><strong>Fin:</strong> {{ competition.currentSeason?.endDate }}</li>
+            </ul>
+            <p>
+                <strong>Última Actualización:</strong> {{ competition.lastUpdated }}
+            </p>
+            </div>
         </div>
         <p v-else>Cargando información...</p>
     </div>

@@ -139,7 +139,7 @@ class FootballController extends Controller
 
         if (!$data) {
             try {
-                $data = $this->footballApi->get("persons/{$id}");
+                $data = $this->footballApi->get("persons/44");
 
                 if (!$data) {
                     return response()->json(['error' => 'player no encontrado'], 404);

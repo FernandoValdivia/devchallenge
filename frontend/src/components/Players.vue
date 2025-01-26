@@ -1,42 +1,44 @@
 <template>
     <div class="container">
         <h1>Listado de Jugadores</h1>
-        <table>
-        <thead>
-            <tr>
-            <th>EMBLEMA</th>
-            <th>NOMBRE</th>
-            <th>POSICIÓN</th>
-            <th>NACIONALIDAD</th>
-            <th>NÚMERO</th>
-            <th>ACCION</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr
-            v-for="(player, index) in players"
-            :key="player.id"
-            >
-            <td>
-                <img
-                :src="player.currentTeam?.crest"
-                alt="Crest"
-                v-if="player.currentTeam?.crest"
-                />
-                <span v-else class="text-gray-500">Sin Emblema</span>
-            </td>
-            <td>{{ player.name }}</td>
-            <td>{{ player.position }}</td>
-            <td>{{ player.nationality }}</td>
-            <td>{{ player.shirtNumber || 'N/A' }}</td>
-            <td>
-                <router-link :to="`/players/${player.id}`">
-                Ver detalle
-                </router-link>
-            </td>
-            </tr>
-        </tbody>
-        </table>
+        <div class="container_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>EMBLEMA</th>
+                        <th>NOMBRE</th>
+                        <th>POSICIÓN</th>
+                        <th>NACIONALIDAD</th>
+                        <th>NÚMERO</th>
+                        <th>ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                    v-for="(player, index) in players"
+                    :key="player.id"
+                    >
+                    <td>
+                        <img
+                        :src="player.currentTeam?.crest"
+                        alt="Crest"
+                        v-if="player.currentTeam?.crest"
+                        />
+                        <span v-else>Sin Emblema</span>
+                    </td>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.position }}</td>
+                    <td>{{ player.nationality }}</td>
+                    <td>{{ player.shirtNumber || 'N/A' }}</td>
+                    <td>
+                        <router-link :to="`/players/${player.id}`">
+                        Ver detalle
+                        </router-link>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <p v-if="players.length === 0">
             Aún no hay jugadores disponibles
         </p>

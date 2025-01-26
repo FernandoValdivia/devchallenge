@@ -1,25 +1,28 @@
 <template>
-    <div class="container mx-auto mt-5">
-        <h1 class="text-2xl font-bold mb-4">Detalle del Equipo</h1>
-        <div v-if="team" class="p-4 border rounded bg-gray-100">
-            <div class="mb-4 text-center">
+    <div class="container">
+        <h1>Detalle del Equipo</h1>
+        <div v-if="team">
+            <div class="container_emblem">
                 <img
                 :src="team.crest"
                 alt="Emblem"
                 class="w-24 h-24 object-contain mx-auto"
                 v-if="team.crest"
                 />
-                <p v-else class="text-gray-500">Sin Emblema</p>
+                <p v-else>Sin Emblema</p>
             </div>
-            <p><strong>Nombre:</strong> {{ team.name }}</p>
-            <p><strong>Abreviatura:</strong> {{ team.tla }}</p>
-            <p><strong>Dirección:</strong> {{ team.address }}</p>
-            <p><strong>Sitio web:</strong> <a :href="team.website" target="_blank" class="text-blue-500 hover:underline">{{ team.website }}</a></p>
-            <p><strong>Fundación:</strong> {{ team.founded }}</p>
-            <p><strong>Colores del Club:</strong> {{ team.clubColors }}</p>
-            <p><strong>Estadio:</strong> {{ team.venue }}</p>
+            <div class="container_info_competencia">
+                <h2>Información</h2>
+                <p><strong>Nombre:</strong> {{ team.name }}</p>
+                <p><strong>Abreviatura:</strong> {{ team.tla }}</p>
+                <p><strong>Dirección:</strong> {{ team.address }}</p>
+                <p><strong>Sitio web:</strong> <a :href="team.website" target="_blank" class="text-blue-500 hover:underline">{{ team.website }}</a></p>
+                <p><strong>Fundación:</strong> {{ team.founded }}</p>
+                <p><strong>Colores del Club:</strong> {{ team.clubColors }}</p>
+                <p><strong>Estadio:</strong> {{ team.venue }}</p>
+            </div>
         </div>
-        <p v-else class="text-gray-500">Cargando información del equipo...</p>
+        <p v-else>Cargando información del equipo...</p>
     </div>
 </template>
 
@@ -28,7 +31,7 @@
     import { useRoute } from "vue-router";
 
     export default {
-    name: "TeamDetail",
+    name: "DetalleTeam",
     setup() {
         const team = ref(null);
         const route = useRoute();

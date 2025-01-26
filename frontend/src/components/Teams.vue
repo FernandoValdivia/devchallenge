@@ -62,10 +62,10 @@
             teams.value = result.teams.map((item) => ({
             id: item.id,
             name: item.name,
-            tla: item.tla, // Abreviatura del equipo
-            crest: item.crest, // Emblema o logo del equipo
-            clubColors: item.clubColors, // Colores del club
-            venue: item.venue, // Estadio del equipo
+            tla: item.tla,
+            crest: item.crest,
+            clubColors: item.clubColors,
+            venue: item.venue,
             }));
         } catch (error) {
             console.error("Error al consumir el API:", error);
@@ -82,15 +82,3 @@
     },
     };
 </script>
-
-<style scoped>
-    table {
-    border-spacing: 1;
-    width: 100%;
-    }
-    th,
-    td {
-    border: 1px solid #000;
-    text-align: left;
-    }
-</style>
