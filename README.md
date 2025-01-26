@@ -16,6 +16,7 @@
 * php artisan serve
 
 *En otra consola, para poder correr el Frontend*
+* cd frontend
 * npm install
 * npm run dev
 
